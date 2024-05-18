@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-zFjJdl5PKVJmFcNUoQjg75JImHdFoOcwte5akVK+J/vw1Qw+63c5iuOsB4t0s8HK/AXbEsiJC4fN3+7p9MhNvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      /* Reset some default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+      }
+
+      header {
+        background-color: #03045e;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+
+      .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .project-card {
+        background-color: #f9f9f9;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        padding: 20px;
+        margin: 10px;
+        transition: transform 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .project-card:hover {
+        transform: translateY(-8px);
+      }
+
+      .project-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+
+        color: #050505;
+      }
+
+      .project-duration {
+        font-size: 16px;
+        line-height: 1.5;
+        color: blue;
+      }
+      .project-description {
+        font-size: 16px;
+        color: #222121;
+        line-height: 1.5;
+      }
+      .technologies {
+        /* Additional styling for technologies */
+        margin-top: 12px;
+        color: #555;
+      }
+      technologies span {
+        display: inline-block;
+        margin-right: 8px;
+        padding: 6px 12px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #013a63;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 0;
+        position: sticky;
+        top: 0;
+        color: white;
+      }
+
+      .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-links li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #007bff;
+      }
+
+      .filter-container {
+        display: flex;
+        margin: 20px auto;
+        width: 50%;
+        align-items: center;
+      }
+
+      .filter-label {
+        margin-right: 10px;
+      }
+
+      .filter-input {
+        padding: 8px;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="certification.html">Certifications</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Projects</h1>
+    </header>
+
+    <div class="filter-container">
+      <label for="filter-input" class="filter-label">Filter:</label>
+      <input
+        type="text"
+        id="filter-input"
+        class="filter-input"
+        placeholder="Enter technology"
+      />
+    </div>
+
+    <div class="projects-container">
+      <div class="project-card">
+        <h2 class="project-title">Jeanius Digital</h2>
+        <p class="project-duration">Feb 2024 - June 2024</p>
+        <p class="project-description">
+          Automated the quality assurance process for color matching and
+          measurement taking using Computer Vision technology specifically
+          tailored for denim industries.
+        </p>
+        <div class="technologies">
+          <span>Python</span>
+          <span>Artificial Intelligance</span>
+          <span>Machine Learning</span>
+          <span>React</span>
+          <span>Node JS</span>
+        </div>
+        <!-- Add more project cards following the same structure -->
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">Social Select</h2>
+        <p class="project-description">
+          Developed a recommender system to provide social media profile
+          according to different niches.
+        </p>
+        <p class="project-duration">Feb 2023 - May 2023</p>
+        <div class="technologies">
+          <span>Web App</span>
+          <span>Python</span>
+          <span>Streamlit</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2 class="project-title">WERENT</h2>
+        <p class="project-duration">Aug 2022 - Dec 2022</p>
+        <p class="project-description">
+          Developed a full stack web application for user to list and rent
+          cars.L
+        </p>
+        <div class="technologies">
+          <span>Web App</span>
+          <span>React</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>MySql</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <h2 class="project-title">SMARTPICK</h2>
+        <p class="project-duration">Aug 2021 - Dec 2021</p>
+        <p class="project-description">
+          Developed a console application to suggest user products after
+          cleaning data of size more than 1 million according to their
+          attributes with the knowledge of data structure, hashing, BST and
+          graphs
+        </p>
+        <div class="technologies">
+          <span>C++</span>
+          <span>Data Structures</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const filterInput = document.getElementById("filter-input");
+      const projectsContainer = document.querySelector(".projects-container");
+
+      filterInput.addEventListener("keyup", () => {
+        const filterText = filterInput.value.toLowerCase();
+        const projects = projectsContainer.querySelectorAll(".project-card");
+
+        projects.forEach((project) => {
+          const projectTechnologies = project
+            .querySelector(".technologies")
+            .textContent.toLowerCase();
+
+          if (projectTechnologies.includes(filterText)) {
+            project.style.display = "block";
+          } else {
+            project.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
